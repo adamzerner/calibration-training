@@ -8,7 +8,7 @@ const app = express();
 
   app.get("/", (_req: Request, res: Response) => {
     const user = { name: "World" };
-    res.render("index", { user });
+    res.render("home", { user });
   });
 
   app.listen(3000, () => {
