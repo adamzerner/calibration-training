@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "react-ssr-tsx-starter",
+  "name": "calibration-training",
   "scripts": {
     "dev": "tsnd --project tsconfig.server.json server/main.ts",
     "build": "tsc --project tsconfig.server.json",
