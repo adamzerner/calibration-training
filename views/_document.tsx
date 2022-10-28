@@ -1,8 +1,4 @@
-import {
-  Document,
-  Head,
-  Main,
-} from '@react-ssr/express';
+import { Document, Head, Main } from "@react-ssr/express";
 
 export default class extends Document {
   render() {
@@ -17,4 +13,4 @@ export default class extends Document {
       </html>
     );
   }
-};
+}

@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import { Head } from '@react-ssr/express';
+import { useState } from "react";
+import { Head } from "@react-ssr/express";
 
 interface IndexProps {
   user: any;
 }
 
 export default (props: IndexProps) => {
-  const [message, setMessage] = useState('waiting...');
+  const [message, setMessage] = useState("waiting...");
 
-  const onClick = () => setMessage('This is a react-ssr!');
+  const onClick = () => setMessage("This is a react-ssr!");
 
   return (
     <>
