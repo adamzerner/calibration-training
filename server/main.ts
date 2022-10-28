@@ -1,20 +1,13 @@
-import express, { Request, Response } from "express";
+import express from "express";
 import register from "@react-ssr/express/register";
+import pageRouter from "./pages";
 
 const app = express();
 
 (async () => {
   await register(app);
 
-  app.get("/", (_req: Request, res: Response) => {
-    const user = { name: "World" };
-    res.render("home", { user });
-  });
-
-  app.get("*", (_req: Request, res: Response) => {
-    res.render("errors/404");
-  });
-
+  app.use("/", pageRouter);
   app.listen(3000, () => {
     console.log("> Ready on http://localhost:3000");
   });

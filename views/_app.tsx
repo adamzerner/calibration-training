@@ -1,5 +1,6 @@
 import "../styles/global.scss";
-import { Navbar } from "./navbar";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 const App = ({ children, ...rest }) => {
   const Page = children;
@@ -7,7 +8,8 @@ const App = ({ children, ...rest }) => {
   return (
     <div>
       <Navbar />
-      <Page {...rest} />;
+      <Page {...rest} />
+      <Footer />
     </div>
   );
 };
