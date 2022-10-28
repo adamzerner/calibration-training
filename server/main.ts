@@ -11,6 +11,10 @@ const app = express();
     res.render("home", { user });
   });
 
+  app.get("*", (_req: Request, res: Response) => {
+    res.render("errors/404");
+  });
+
   app.listen(3000, () => {
     console.log("> Ready on http://localhost:3000");
   });
