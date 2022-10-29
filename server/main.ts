@@ -4,13 +4,14 @@ import pageRouter from "./pages";
 import apiRouter from "./api";
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 (async () => {
   await register(app);
 
   app.use("/api", apiRouter);
   app.use("/", pageRouter);
-  app.listen(3000, () => {
+  app.listen(port, () => {
     console.log("> Ready on http://localhost:3000");
   });
 })();
