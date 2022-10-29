@@ -1,4 +1,5 @@
 import "../styles/global.scss";
+import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 
@@ -7,9 +8,11 @@ const App = ({ children, ...rest }) => {
 
   return (
     <div>
-      <Navbar />
-      <Page {...rest} />
-      <Footer />
+      <ChakraProvider>
+        <Navbar />
+        <Page {...rest} />
+        <Footer />
+      </ChakraProvider>
     </div>
   );
 };
