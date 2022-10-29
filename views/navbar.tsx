@@ -8,7 +8,7 @@ export default () => (
       <a href="/analytics">Analytics</a>
     </section>
     <section style={{ float: "right" }}>
-      <a href="/sign-in">Sign In</a>
+      <a href="/log-in">Log In</a>
       <a href="/sign-up">Sign Up</a>
       <a href="/profile">Profile</a>
     </section>

@@ -1,8 +1,8 @@
 import express from "express";
-import signIn from "./sign-in";
+import logIn from "./log-in";
 
 const router = express.Router();
 
-router.get("/sign-in", signIn);
+router.get("/log-in", logIn);
 
 export default router;
